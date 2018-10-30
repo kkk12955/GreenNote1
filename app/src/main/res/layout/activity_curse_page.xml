@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_curse"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+
+        android:id="@+id/list_curse"
+        android:layout_width="match_parent"
+        android:headerDividersEnabled="true"
+        android:footerDividersEnabled="true"
+        android:fastScrollEnabled="true"
+        android:divider="#00ffffff"
+        android:dividerHeight="20dp"
+        android:padding="2dp"
+        android:layout_height="286dp"
+        android:layout_weight="0.91" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginLeft="155dp"
+        android:layout_marginRight="155dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/Btn_add_book"
+            android:layout_width="wrap_content"
+            android:layout_height="56dp"
+            android:scaleX="1"
+            android:scaleY="1.3"
+            android:background="@color/colorNull"
+            android:cropToPadding="false"
+            android:scaleType="centerInside"
+
+            android:src="@drawable/curse_new">
+
+        </ImageButton>
+    </LinearLayout>
+
+</LinearLayout>

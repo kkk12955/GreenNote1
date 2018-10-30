@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.im.tku.greennote.EditImage">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="77dp"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <SeekBar
+            android:id="@+id/sb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="394dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/cut_bg"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/pic_effect_icon"
+                android:layout_marginLeft="20sp"
+                android:background="@color/colorNull"/>
+
+            <ImageButton
+                android:id="@+id/light"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/pic_light_icon"
+                android:layout_marginLeft="20sp"
+                android:background="@color/colorNull" />
+
+            <ImageButton
+                android:id="@+id/color"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/pic_color_icon"
+                android:layout_marginLeft="20sp"
+                android:background="@color/colorNull" />
+
+            <ImageButton
+                android:id="@+id/Save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pic_save_icon"
+                android:layout_marginLeft="20sp"
+                android:background="@color/colorNull"
+                android:text="存檔" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/editimgview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@color/colorNull"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="1dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintVertical_bias="0.0" />
+
+</android.support.constraint.ConstraintLayout>

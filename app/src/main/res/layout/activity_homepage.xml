@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_homepage"
+    tools:context="com.im.tku.greennote.HomePage">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:id="@+id/liner_top"
+            android:layout_width="match_parent"
+            android:layout_height="111dp"
+            android:layout_marginBottom="24dp"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+
+                android:id="@+id/liner_middle"
+                android:layout_width="252dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="36sp">
+
+
+                <ImageButton
+                    android:id="@+id/imageButton_note"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_column="0"
+                    android:layout_marginLeft="50sp"
+                    android:layout_weight="1"
+                    android:background="@color/colorNull"
+                    android:onClick="imageButton_note"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/hg_note_icon" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_photo"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:background="@color/colorNull"
+                    android:onClick="imageButton_photo"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/hg_photo_icon" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15sp">
+
+                <ImageButton
+                    android:id="@+id/imageButton_book"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_column="0"
+                    android:layout_marginLeft="50sp"
+                    android:layout_weight="1"
+                    android:background="@color/colorNull"
+                    android:onClick="imageButton_book"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/hg_curse_icon" />
+
+                <ImageButton
+                    android:id="@+id/imageButton_folder"
+                    android:layout_width="128dp"
+                    android:layout_height="128dp"
+                    android:layout_column="1"
+                    android:layout_weight="1"
+                    android:background="@color/colorNull"
+                    android:onClick="imageButton_folder"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/hg_folder_icon" />
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

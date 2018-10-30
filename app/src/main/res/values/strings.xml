@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">PicNote</string>
+    <string name="title_activity_book">book</string>
+    <string name="book_title">我的課程</string>
+    <string name="note_title">創立筆記本</string>
+    <string name="photo_title">拍照</string>
+    <string name="folder_title">文件管理</string>
+    <string name="select_mode">Spinner 選擇模式</string>
+    <string name="is_not_directory">不存在</string>
+    <string name="can_not_read">無法讀取</string>
+    <string-array name="date_list">
+        <item>星期一</item>
+        <item>星期二</item>
+        <item>星期三</item>
+        <item>星期四</item>
+        <item>星期五</item>
+        <item>星期六</item>
+        <item>星期日</item>
+    </string-array>
+    <string-array name="TextView_Dialog">
+        <item>修改文字</item>
+        <item>修改顏色</item>
+        <item>修改字型</item>>
+        <item>刪除</item>
+        <item>取消</item>
+    </string-array>
+    <string-array name="Curse_Dialog">
+        <item>編輯</item>
+        <item>刪除</item>
+        <item>取消</item>
+    </string-array>
+    <string name="title_activity_list_item">list_item</string>
+</resources>

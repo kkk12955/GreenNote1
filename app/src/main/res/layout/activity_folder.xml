@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_folder_index"
+    android:visibility="visible"
+    tools:context="com.im.tku.greennote.Folder">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="3dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="90dp">
+
+                <ImageButton
+                    android:id="@+id/Btn_Doc"
+                    android:layout_width="match_parent"
+                    android:layout_height="159sp"
+                    android:scaleX="1.5"
+                    android:scaleY="1.4"
+                    android:background="@color/colorNull"
+                    android:src="@drawable/note_folder" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="180dp"
+                tools:layout_editor_absoluteY="90dp">
+
+                <ImageButton
+                    android:id="@+id/Btn_Img"
+                    android:layout_width="180dp"
+                    android:layout_height="158dp"
+                    android:layout_gravity="bottom"
+                    android:scaleX="1.4"
+                    android:scaleY="1.5"
+                    android:background="@color/colorNull"
+                    android:src="@drawable/picture_folder" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="183dp"
+                tools:layout_editor_absoluteY="297dp">
+
+                <TextView
+                    android:id="@+id/Note_tile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="筆記庫"
+                    android:textSize="26dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="180dp"
+                android:layout_height="120dp"
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="8dp"
+                tools:layout_editor_absoluteY="297dp">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="圖片庫"
+
+                    android:textSize="26dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
